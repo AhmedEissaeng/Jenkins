@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'docker run -d myapp:v1 -p 5001:5001'
+                sh 'docker run -d -p 5001:5001 myapp:v1'
             }
         }
     }
