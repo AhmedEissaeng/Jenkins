@@ -79,7 +79,7 @@ HTML_PAGE = """
 
 @app.route('/')
 def home():
-    return render_template_string(HTML_PAGE)
+    return "<h1>Flask Docker App Working 🚀</h1>"
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(host='0.0.0.0', port=5001)
